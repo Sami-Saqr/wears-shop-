@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../utils/constants.dart';
+import '../core/theme/app_colors.dart';
 
 class CategoryItemData {
   final String id;

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:intl/intl.dart';
-import '../utils/constants.dart';
+import '../core/theme/app_colors.dart';
 import '../providers/orders_provider.dart';
 import '../models/order.dart';
 import '../widgets/checkout_item_card.dart';

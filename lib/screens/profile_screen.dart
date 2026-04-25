@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../utils/constants.dart';
+
+import '../core/app_router/app_router.dart';
+import '../core/cache/cache_helper.dart';
+import '../core/network/dio_helper.dart';
+import '../core/theme/app_colors.dart';
 import '../providers/auth_provider.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -156,9 +160,11 @@ class ProfileScreen extends StatelessWidget {
                           TextButton(
                             onPressed: () {
                               auth.logout();
+                              CacheHelper.removeToken();
+                              DioHelper.clearAuthToken();
                               Navigator.pushNamedAndRemoveUntil(
                                 context,
-                                '/welcome',
+                                AppRoutes.welcome,
                                 (route) => false,
                               );
                             },

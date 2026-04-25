@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
+import '../core/theme/app_colors.dart';
 import '../models/product.dart';
 import '../providers/favorites_provider.dart';
-import '../utils/constants.dart';
 
 class ProductCard extends StatelessWidget {
   final Product product;

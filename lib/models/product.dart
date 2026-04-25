@@ -1,4 +1,4 @@
-import '../utils/constants.dart';
+import '../core/network/api_constants.dart';
 
 class Product {
   final String id;
@@ -51,7 +51,7 @@ class Product {
       description: json['description'] ?? '',
       price: (json['price'] ?? 0).toDouble(),
       originalPrice: json['original_price']?.toDouble(),
-      imageUrl: AppConstants.getFullImageUrl(rawImage),
+      imageUrl: ApiConstants.getFullImageUrl(rawImage),
       rating: (json['rating'] ?? 0).toDouble(),
       reviewCount: json['review_count'] ?? json['reviewCount'] ?? 0,
       category: json['category']?['title'] ?? json['category_name'] ?? '',

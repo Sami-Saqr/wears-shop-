@@ -1,8 +1,8 @@
 import 'package:flutter/foundation.dart';
 
+import '../core/network/api_constants.dart';
 import '../models/product.dart';
 import '../services/api_service.dart';
-import '../utils/constants.dart';
 
 class Slider {
   final int id;
@@ -23,7 +23,7 @@ class Slider {
       id: json['id'] ?? 0,
       title: json['title'] ?? '',
       description: json['description'] ?? '',
-      imageUrl: AppConstants.getFullImageUrl(rawImage),
+      imageUrl: ApiConstants.getFullImageUrl(rawImage),
     );
   }
 }
@@ -47,7 +47,7 @@ class Category {
       id: json['id'] ?? 0,
       name: json['title'] ?? json['name'] ?? '',
       description: json['description'] ?? '',
-      imageUrl: AppConstants.getFullImageUrl(rawImage),
+      imageUrl: ApiConstants.getFullImageUrl(rawImage),
     );
   }
 }

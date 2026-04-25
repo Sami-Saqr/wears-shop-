@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../core/theme/app_colors.dart';
 import '../models/product.dart';
 import '../providers/products_provider.dart';
-import '../utils/constants.dart';
 import '../widgets/product_card.dart';
 
 class SearchScreen extends StatefulWidget {

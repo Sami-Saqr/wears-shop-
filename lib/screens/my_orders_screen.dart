@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../models/order.dart';
 import '../providers/orders_provider.dart';
-import '../utils/constants.dart';
+import '../core/theme/app_colors.dart';
 import '../widgets/order_card.dart';
 
 class MyOrdersScreen extends StatefulWidget {

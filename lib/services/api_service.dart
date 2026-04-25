@@ -1,11 +1,11 @@
 import 'package:dio/dio.dart';
 
-import '../utils/constants.dart';
+import '../core/network/api_constants.dart';
 
 class ApiService {
   static final Dio _dio = Dio(
     BaseOptions(
-      baseUrl: AppConstants.baseUrl,
+      baseUrl: ApiConstants.baseUrl,
       connectTimeout: const Duration(seconds: 10),
       receiveTimeout: const Duration(seconds: 10),
       headers: {

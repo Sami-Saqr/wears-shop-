@@ -4,7 +4,7 @@ import 'package:provider/provider.dart';
 import '../providers/cart_provider.dart';
 import '../providers/favorites_provider.dart';
 import '../providers/products_provider.dart';
-import '../utils/constants.dart';
+import '../core/theme/app_colors.dart';
 import '../widgets/quantity_selector.dart';
 
 class ProductDetailScreen extends StatefulWidget {
